@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>干嘛</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body id="ganma">
+
+<nav>
+<section>
+    <span class="home">
+        <a href="/">Home</a>
+    </span>
+    <span class="links">
+        <a href="/blog/">Blog</a>
+        <a href="/news/">News</a>
+        <a href="/contact/">Contact</a>
+        <a href="/about/">About</a>
+    </span>
+</section>
+</nav>
+
+<main>
+<article>
+<h1><a href="/blog/ganma/">干嘛</a></h1>
+<p class="meta">Published on 2018-01-03 by <b>Admin</b></p>
+
+
+</article>
+下载安装 Windows 版 Seafile 服务器
+安装 Python 2.7.11 32 位版本
+•	下载并安装 python 2.7.11 32 位版本
+•	将 python2.7 的安装路径添加到系统的环境变量中 (PATH 变量)。比如：如果您将 python 2.7.11 安装在C:\Python27路径下，那么就将C:\Python27添加到环境变量中。
+注意：一定要使用 Python 2.7.11 32 位版本。64 位版本或不是 2.7.11 的版本不能工作。
+下载并解压 Seafile 服务器
+•	获取 Seafile 服务器的最新版本。
+•	为 Seafile 服务器程序创建一个新的文件夹，比如C:\SeafileProgram\。请记住此文件夹的位置，我们将在以后用到它。
+•	将seafile-server_6.0.7_win32.tar解压到C:\SeafileProgram\目录下。
+现在，您的目录结构应该像如下这样：
+C:\SeafileProgram
+         |__ seafile-server-5.0.3
+启动与初始化
+启动 Seafile 服务器
+在C:\SeafileProgram\seafile-server-6.0.7 \文件夹下，找到run.bat文件并双击，以启动 Seafile 服务器。此时，您应该注意到 Seafile 服务器的图标已经出现在您的系统托盘中。
+选择一个磁盘作为 Seafile 服务器数据的存储位置
+现在，您可以在弹出的对话框中选择一个磁盘，以便存储 Seafile 服务器的数据：
+•	请确保选择的磁盘拥有足够的剩余空间
+•	点击确认按钮后， Seafile 将会在您选择的磁盘下为您创建一个名为seafile-server的文件夹。这个文件夹就是 Seafile 服务器的数据文件夹。如果您选择D盘，那么数据文件夹为D:\seafile-server
+添加管理员帐号
+右击 Seafile 服务器的系统托盘图标， 选择"添加管理员帐号"选项。在弹出的对话框中输入您的管理员用户名和密码。
+如果操作成功， Seafile 服务器托盘图标处会弹出一个气泡提示您"添加 Seahub 管理员账户成功"
+配置 Seafile 服务器
+初始化服务器之后，还需配置以下选项，否则不能进行文件的上传下载:
+•	访问服务器的 Web 界面 (打开 http://<您的 IP 地址>:8000)，用管理员账号登录
+•	点击左上角的扳手图标，进入管理员界面，在进入"设置"标签
+•	将SERVICE_URL的值配置成http://<您的 IP 地址>:8000。比如您的 Windows 服务器地址为192.168.1.100， 那么配置成SERVICE_URL = http://192.168.1.100:8000
+•	将FILE_SERVER_ROOT的值配置成http://<您的 IP 地址>:8082。比如您的 Windows 服务器地址为192.168.1.100， 那么配置成SERVICE_URL = http://192.168.1.100:8082
+
+</main>
+
+<footer>
+<section>
+<p>&copy; 2018 Lorem Ipsum</p>
+<p>
+    <a href="https://twitter.com/sunainapai">Twitter</a>
+    <a href="https://github.com/sunainapai">GitHub</a>
+    <a href="https://www.example.com/">Example</a>
+</p>
+</section>
+</footer>
+
+</body>
+</html>
